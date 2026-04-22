@@ -25,7 +25,7 @@ my-homework
 
 ## 📋 Index of Assignments
 
-| Tuần | Chủ đề      | Mô tả nội dung                                                                 | Link chi tiết                          |
+| Week | Content      | Description                                                                 | Link                          |
 |------|-------------|--------------------------------------------------------------------------------|----------------------------------------|
 | 1    | Git Basics | Practice fundamental Git operations: repository initialization, committing, branching, tracking history, merging branch into main | [W1_Git_Basics/README.md](W1_Git_Basics/README.md) |
 
