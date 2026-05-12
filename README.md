@@ -10,12 +10,12 @@
 Below is the directory tree illustrating how the projects and assignments are organized:
 
 ```
-my-homework
+my-homework/
 ├── LICENSE
 ├── README.md
-└── W1_Git_Basics
+└── W1_Git_Basics/
     ├── README.md
-    └── screenshots
+    └── screenshots/
         └── Wecamp W1 S1 homework_NgoPhuongQuyen.png
 ```
 
