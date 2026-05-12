@@ -63,7 +63,7 @@
   - [BinarySearch.cpp](BinarySearch.cpp)
   - [BubbleSort.cpp](BubbleSort.cpp)
   - 3 bài leetcode easy:
-    + [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/submissions/1844143722)
-    + [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/submissions/1989863677)
-    + [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/1989876986)
+    + [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/solutions/8197207/9-palindrome-number-by-reine-oeo4)
+    + [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/solutions/8197249/longest-common-prefix-by-reine-c1fc)
+    + [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/solutions/8197262/remove-duplicates-from-sorted-array-by-r-ztub)
 

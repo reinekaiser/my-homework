@@ -1,31 +1,34 @@
 # 🚀 WeCamp 2026: Training Journey
 
 **Student:** Ngo Phuong Quyen  
-**Repository Purpose:** This repository serves as a centralized portfolio for all assignments, projects, and practical exercises completed during the WeCamp 2026 training program.
+**Repository Purpose:** Portfolio of assignments, projects, and practical exercises completed during the WeCamp 2026 training program.
 
 ---
 
 ## 📂 Repository Structure
 
-Below is the directory tree illustrating how the projects and assignments are organized:
+The project is organized by training weeks and practice exercises:
 
 ```
 my-homework/
 ├── LICENSE
 ├── README.md
-└── W1_Git_Basics/
-    ├── README.md
-    └── screenshots/
-        └── Wecamp W1 S1 homework_NgoPhuongQuyen.png
+├── W1_Git_Basics/
+│   ├── Content.md
+│   └── screenshots/
+│       └── Wecamp W1 S1 homework_NgoPhuongQuyen.png
+├── W3_DSA_Basics/
+│   ├── BinarySearch.cpp
+│   ├── BubbleSort.cpp
+│   └── Content.md
 ```
-
-3 directories, 4 files
 
 ---
 
 ## 📋 Index of Assignments
 
-| Week | Content      | Description                                                                 | Link                          |
-|------|-------------|--------------------------------------------------------------------------------|----------------------------------------|
-| 1    | Git Basics | Practice fundamental Git operations: repository initialization, committing, branching, tracking history, merging branch into main | [W1_Git_Basics/README.md](W1_Git_Basics/README.md) |
+| Week | Content        | Description                                                                 | Link                          |
+|------|----------------|-----------------------------------------------------------------------------|-------------------------------|
+| 1    | Git Basics     | Practice fundamental Git operations: repository initialization, commits, branches, history, merge workflows | [W1_Git_Basics/Content.md](W1_Git_Basics/Content.md) |
+| 3    | DSA Basics     | Notes and examples for data structures, algorithm strategies, Big O notation, plus sample C++ implementations | [W3_DSA_Basics/Content.md](W3_DSA_Basics/Content.md) |
 
