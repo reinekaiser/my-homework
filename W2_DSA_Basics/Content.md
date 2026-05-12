@@ -3,67 +3,66 @@
 ## 1. Data Structures
 
 ### Array
-- Là cấu trúc dữ liệu lưu nhiều phần tử cùng kiểu, lưu liên tiếp trong bộ nhớ.
-- Truy cập theo chỉ số: `arr[i]` là `O(1)`.
-- Thêm/xóa ở cuối mảng thường là `O(1)` nếu còn chỗ trống.
-- Thêm/xóa ở giữa hoặc đầu mảng cần dịch chuyển phần tử, nên là `O(n)`.
+- A data structure that stores multiple elements of the same type, stored consecutively in memory.
+- Access by index: `arr[i]` is `O(1)`.
+- Adding/removing at the end is typically `O(1)` if there is free space.
+- Adding/removing in the middle or at the beginning requires shifting elements, so it's `O(n)`.
 
 ### Linked List
-- Là danh sách các node, mỗi node có giá trị và con trỏ đến node tiếp theo.
-- Không lưu liên tiếp trong bộ nhớ như mảng nên kích thước có thể thay đổi linh hoạt.
-- Truy cập phần tử ở vị trí bất kỳ là `O(n)` vì phải duyệt từ đầu.
-- Thêm/xóa ở đầu hoặc sau node đã biết là `O(1)`.
+- A list of nodes where each node has a value and a pointer to the next node.
+- Not stored consecutively in memory like an array, so the size can be changed more flexibly.
+- Accessing an element at any position is `O(n)` because we must traverse from the beginning.
+- Adding/removing at the beginning or after a known node is `O(1)`.
 
 ### Stack
-- Nguyên tắc LIFO (Last In, First Out): phần tử vào cuối cùng sẽ ra đầu tiên.
-- Thao tác cơ bản: `push` (đẩy vào) và `pop` (lấy ra).
-- Ví dụ: undo/redo, kiểm tra dấu ngoặc, duyệt đệ quy.
-- `push/pop` thường thực hiện trong `O(1)`.
+- Follows LIFO (Last In, First Out) principle: the last element added is the first to be removed.
+- Basic operations: `push` (add) and `pop` (remove).
+- Examples: undo/redo, checking balanced parentheses, recursive traversal.
+- `push/pop` is typically `O(1)`.
 
 ### Queue
-- Nguyên tắc FIFO (First In, First Out): phần tử vào trước sẽ ra trước.
-- Thao tác cơ bản: `enqueue` (đưa vào) và `dequeue` (lấy ra).
-- Ví dụ thực tế: hàng đợi API request, MQ, Kafka, hệ thống xử lý tin nhắn.
-- `enqueue/dequeue` thường là `O(1)`.
+- Follows FIFO (First In, First Out) principle: the first element added is the first to be removed.
+- Basic operations: `enqueue` (add) and `dequeue` (remove).
+- Real-world examples: API request queue, MQ, Kafka, message processing systems.
+- `enqueue/dequeue` is typically `O(1)`.
 
 ### Hash Table
-- Lưu cặp `key -> value` bằng cách dùng hàm băm (`hash function`).
-- Truy xuất theo key trung bình là `O(1)`.
-- Vấn đề chính là collision (va chạm) khi hai key khác nhau có cùng bucket.
-- Cách xử lý collision: chaining (mỗi bucket là danh sách) hoặc open addressing.
+- Stores `key -> value` pairs using a hash function.
+- Average access time by key is `O(1)`.
+- Main issue: collision (hash clash) when two different keys hash to the same bucket.
+- Collision handling: chaining (each bucket is a list) or open addressing.
 
-## 2. Halting problem
-- Bài toán dừng: có tồn tại chương trình `H` kiểm tra được mọi chương trình `P` với mọi đầu vào `x` và trả lời được `P` dừng hay không dừng không?
-- Kết luận: không có thuật toán tổng quát giải được mọi trường hợp.
-- Đây là một bài toán cơ bản của lý thuyết tính toán và lý do một số vấn đề không thể tự động giải quyết.
+## 2. Halting Problem
+- The Halting Problem: Does there exist a program `H` that can determine whether every program `P` with every input `x` will halt or not?
+- Conclusion: No universal algorithm exists to solve this for all cases.
+- This is a fundamental problem in computability theory and explains why some problems cannot be automatically solved.
 
-## 3. Các chiến lược giải thuật
-- **Brute force**
-  - Thử mọi khả năng có thể.
-  - Đơn giản nhưng thường rất chậm vì độ phức tạp cao.
+## 3. Algorithm Strategies
+- **Brute Force**
+  - Try all possible solutions.
+  - Simple but usually very slow due to high complexity.
 - **Greedy**
-  - Tại mỗi bước, chọn phương án tốt nhất hiện tại.
-  - Không phải lúc nào cũng cho lời giải tối ưu toàn cục, nhưng nhanh và dễ triển khai.
-  - Ví dụ: chọn đồng xu lớn nhất để đổi tiền (nếu hệ số chia phù hợp).
-- **Divide & conquer**
-  - Chia bài toán lớn thành các bài toán con nhỏ hơn, giải từng phần và gộp kết quả.
-  - Ví dụ: Merge Sort, Quick Sort, tìm kiếm nhị phân.
+  - At each step, choose the best option available at that moment.
+  - Doesn't always lead to the globally optimal solution, but is fast and easy to implement.
+  - Example: choosing the largest coin for making change (if applicable).
+- **Divide & Conquer**
+  - Break the large problem into smaller sub-problems, solve each, then combine the results.
+  - Examples: Merge Sort, Quick Sort, binary search.
 
-## 4. Big O — đo độ phức tạp thuật toán
-
-## 5. Ví dụ tóm tắt để dễ nhớ
-- `O(1)` — truy cập trực tiếp, phép toán đơn.
-- `O(log n)` — cắt đôi dữ liệu mỗi bước (binary search).
-- `O(n)` — một vòng lặp qua `n` phần tử.
+## 4. Quick Summary for Memorization
+- `O(1)` — direct access, simple operation.
+- `O(log n)` — halve data each step (binary search).
+- `O(n)` — one loop through `n` elements.
 - `O(n log n)` 
-- `O(n^2)` — hai vòng lặp lồng nhau.
+- `O(n^2)` — nested loops.
 - `O(2^n)` / `O(n!)` 
 
-## 6. Bài tập về nhà
+## 5. Homework
   - [BinarySearch.cpp](BinarySearch.cpp)
   - [BubbleSort.cpp](BubbleSort.cpp)
-  - 3 bài leetcode easy:
+  - 3 LeetCode Easy problems:
     + [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/solutions/8197207/9-palindrome-number-by-reine-oeo4)
     + [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/solutions/8197249/longest-common-prefix-by-reine-c1fc)
     + [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/solutions/8197262/remove-duplicates-from-sorted-array-by-r-ztub)
+
 

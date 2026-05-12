@@ -17,7 +17,7 @@ my-homework/
 │   ├── Content.md
 │   └── screenshots/
 │       └── Wecamp W1 S1 homework_NgoPhuongQuyen.png
-├── W3_DSA_Basics/
+├── W2_DSA_Basics/
 │   ├── BinarySearch.cpp
 │   ├── BubbleSort.cpp
 │   └── Content.md
@@ -30,5 +30,5 @@ my-homework/
 | Week | Content        | Description                                                                 | Link                          |
 |------|----------------|-----------------------------------------------------------------------------|-------------------------------|
 | 1    | Git Basics     | Practice fundamental Git operations: repository initialization, commits, branches, history, merge workflows | [W1_Git_Basics/Content.md](W1_Git_Basics/Content.md) |
-| 3    | DSA Basics     | Notes and examples for data structures, algorithm strategies, Big O notation, plus sample C++ implementations | [W3_DSA_Basics/Content.md](W3_DSA_Basics/Content.md) |
+| 2    | DSA Basics     | Notes and examples for data structures, algorithm strategies, Big O notation, plus sample C++ implementations | [W2_DSA_Basics/Content.md](W2_DSA_Basics/Content.md) |
 
